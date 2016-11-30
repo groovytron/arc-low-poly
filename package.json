@@ -1,0 +1,28 @@
+{
+  "name": "arc-low-poly",
+  "version": "1.0.0",
+  "description": "Web application showing furniture using WebGL and bilboard clouds.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/groovytron/arc-low-poly.git"
+  },
+  "keywords": [
+    "WebGL",
+    "billboards",
+    "infography"
+  ],
+  "author": "Julien M'Poy & Joël Vaucher",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/groovytron/arc-low-poly/issues"
+  },
+  "homepage": "https://github.com/groovytron/arc-low-poly#readme",
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "jquery": "^3.1.1"
+  }
+}
