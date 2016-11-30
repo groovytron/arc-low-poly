@@ -1,3 +1,3 @@
 $( document ).ready(function() {
-    start();
+    WebGLFacade.start("webgl-canvas");
 });
