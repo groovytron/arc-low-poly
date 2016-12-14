@@ -1,7 +1,7 @@
 var glContext = null;
 var c_width = 0;
 var c_height = 0;
-var prg = null; 
+var prg = null;
 
 function degToRad(degrees) {
     return (degrees * Math.PI / 180.0);
@@ -122,7 +122,7 @@ function getGLContext(canvasName) {
             //gl = canvas.getContext(names[i], {premultipliedAlpha: false});
             //gl.enable(gl.BLEND);
             //gl.blendEquation(gl.FUNC_ADD);
-            //gl.blendFunc(gl.SRC_ALPHA, gl.ONE_MINUS_SRC_ALPHA);			
+            //gl.blendFunc(gl.SRC_ALPHA, gl.ONE_MINUS_SRC_ALPHA);
         } catch (e) {}
 
         if (gl) break;
@@ -177,6 +177,7 @@ function getArrayBufferWithArray(values) {
 function initTextureWithImage(sFilename, texturen) {
     var anz = texturen.length;
     texturen[anz] = glContext.createTexture();
+
 
     texturen[anz].image = new Image();
     texturen[anz].image.onload = function() {
