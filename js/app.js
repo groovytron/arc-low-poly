@@ -40,6 +40,13 @@ function initShaderParameters(prg){
     prg.nMatrixUniform                 = glContext.getUniformLocation(prg, 'uNMatrix');
     prg.lightPositionUniform           = glContext.getUniformLocation(prg, 'uLightPosition');
 }
+
+function initScene(){
+    // TODO: Implement Me
+    // Create billboard(s)
+    console.log("Il faut créer un billboard!");
+}
+// Might be unuseful
 function initLights(){
     glContext.uniform3f(prg.lightPositionUniform, 0, 0, 1);
 }
@@ -62,8 +69,8 @@ function drawObject(modelViewMatrix, vertexBuffer, normalsBuffer, textureBuffer,
     glContext.drawElements(glContext.TRIANGLES, indexCount, glContext.UNSIGNED_SHORT,0);
 }
 function startRenderLoop(){
-    initLights();
-    mat4.identity(mvMatrix);
+    initLights(); // Remove if unused
+    mat4.identity(mvMatrix); // Must be done in drawScene()
     renderLoop();
 }
 function drawScene(){
@@ -87,10 +94,8 @@ function drawScene(){
 function initWebGL(){
     glContext = getGLContext('webgl-canvas');
     initProgram();
-    loadModel("models/OBJ/Table/Table-Final.obj");
-    initTextureWithImage( "models/OBJ/Table/table2.png", texColorTab );
-    startRenderLoop();
-}
-function sliderValueChanged(){
-    movingStep = document.getElementById("movingStepSlider").value/100.0;
+    initScene();
+    loadModel("models/OBJ/Table/Table-Final.obj"); // Must be done in Billboard class
+    initTextureWithImage( "models/OBJ/Table/table2.png", texColorTab ); // Must be done in Billboard class
+    startRenderLoop(); // Might be reaplced by renderLoop()
 }
