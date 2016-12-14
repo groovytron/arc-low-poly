@@ -11,7 +11,7 @@ var nMatrix = mat4.create();
 var currentRy = 0;
 var tx = 0.0;
 var ty = 0.2;
-var tz = -4.5;
+var tz = -10.5;
 window.onkeydown = checkKey;
 var movingStep = 1.0;
 function checkKey(ev){
