@@ -95,7 +95,7 @@ function initWebGL(){
     glContext = getGLContext('webgl-canvas');
     initProgram();
     initScene();
-    loadModel("models/OBJ/Table/Table-Final.obj"); // Must be done in Billboard class
-    initTextureWithImage( "models/OBJ/Table/table2.png", texColorTab ); // Must be done in Billboard class
+    loadModel("models/OBJ/Table/Table-Final-uvmapped.obj"); // Must be done in Billboard class
+    initTextureWithImage( "models/OBJ/Table/uvmap.png", texColorTab ); // Must be done in Billboard class
     startRenderLoop(); // Might be reaplced by renderLoop()
 }

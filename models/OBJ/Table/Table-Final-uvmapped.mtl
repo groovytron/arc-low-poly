@@ -1,0 +1,50 @@
+# Blender MTL File: 'Table-Final.blend'
+# Material Count: 4
+
+newmtl m1
+Ns 96.078431
+Ka 1.000000 1.000000 1.000000
+Kd 0.640000 0.640000 0.640000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 0.000000
+illum 2
+map_Kd /home/julien/Documents/he-arc/2016-2017/webgl/projet/low-poly/arc-low-poly/scanner/uvmap.png
+map_d /home/julien/Documents/he-arc/2016-2017/webgl/projet/low-poly/arc-low-poly/scanner/uvmap.png
+
+newmtl m1_table2.png
+Ns 96.078431
+Ka 1.000000 1.000000 1.000000
+Kd 0.640000 0.640000 0.640000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 0.000000
+illum 2
+map_Kd /home/julien/Documents/he-arc/2016-2017/webgl/projet/low-poly/arc-low-poly/scanner/uvmap.png
+map_d /home/julien/Documents/he-arc/2016-2017/webgl/projet/low-poly/arc-low-poly/scanner/uvmap.png
+
+newmtl m1_table3.png
+Ns 96.078431
+Ka 1.000000 1.000000 1.000000
+Kd 0.640000 0.640000 0.640000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 0.000000
+illum 2
+map_Kd /home/julien/Documents/he-arc/2016-2017/webgl/projet/low-poly/arc-low-poly/scanner/uvmap.png
+map_d /home/julien/Documents/he-arc/2016-2017/webgl/projet/low-poly/arc-low-poly/scanner/uvmap.png
+
+newmtl m1_uvmap.png
+Ns 96.078431
+Ka 1.000000 1.000000 1.000000
+Kd 0.640000 0.640000 0.640000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 0.000000
+illum 2
+map_Kd /home/julien/Documents/he-arc/2016-2017/webgl/projet/low-poly/arc-low-poly/scanner/uvmap.png
+map_d /home/julien/Documents/he-arc/2016-2017/webgl/projet/low-poly/arc-low-poly/scanner/uvmap.png
