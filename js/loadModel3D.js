@@ -2,7 +2,7 @@
 ////              Model Loader              ////
 ////////////////////////////////////////////////
 
-//		<script src="js/OBJ_loader.js"></script>		
+//		<script src="js/OBJ_loader.js"></script>
 
 
 /**
@@ -12,18 +12,18 @@ var textureBuffersArray = [];
 
 function handleOBJModel(filename, data){
 	console.info(filename + ' has been retrieved from the server');
-	
+
 	var objData = new OBJ.Mesh(data);
 	vertexBuffer = getVertexBufferWithVertices(objData.vertices);
 	normalsBuffer = getVertexBufferWithVertices(objData.vertexNormals);
 	textureBuffer = getVertexBufferWithVertices(objData.textures);
 	indexBuffer = getIndexBufferWithIndices(objData.indices);
-	
+
 	vertexBuffersArray.push(vertexBuffer);
 	normalBuffersArray.push(normalsBuffer);
 	textureBuffersArray.push(textureBuffer);
 	indexBuffersArray.push(indexBuffer);
-	indicesArray.push(objData.indices);	
+	indicesArray.push(objData.indices);
 }
 
 function showPayloadInfo( filename, payload ) {
@@ -32,10 +32,10 @@ function showPayloadInfo( filename, payload ) {
 	console.info("v: " + payload.vertices);
 	console.info("i: " + payload.indices);
 	console.info("c: " + payload.colors);
-	
+
 	var passTable = [];
 	passTable = payload.indices;
-	
+
 	console.info("#polygones : " + passTable.length / 3);
 }
 
@@ -44,18 +44,18 @@ function showPayloadInfo( filename, payload ) {
 */
 function handleJSONModel( filename, payload ) {
 	showPayloadInfo( filename, payload );
-	
+
 	indices = payload.indices;
 
 	//initializes buffers: sends data from the JavaScript arrays to the graphics card
-	vertexBuffer = getVertexBufferWithVertices(payload.vertices);					
+	vertexBuffer = getVertexBufferWithVertices(payload.vertices);
 	normalsBuffer = getVertexBufferWithVertices(payload.normals);
 	indexBuffer = getIndexBufferWithIndices(payload.indices);
-	
+
 	//init lights
 	initLights();
 	//Starts rendering loop, calls drawScene
-	renderLoop();	
+	renderLoop();
 }
 
 /**
@@ -65,7 +65,7 @@ function loadModel(filename){
 	var request = new XMLHttpRequest();
 	console.info('Requesting ' + filename);
 	request.open("GET",filename);
-	
+
 	request.onreadystatechange = function() {
 	  if (request.readyState == 4) {
 		if(request.status == 404) {
