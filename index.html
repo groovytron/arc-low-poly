@@ -10,8 +10,9 @@
         <script src="js/commonFunctions.js"></script>
         <script src="js/gl-matrix-min.js"></script>
         <script src="js/webglTools.js"></script>
-        <script src="js/loadModel3D.js"></script>
+        <!-- <script src="js/loadModel3D.js"></script> -->
         <script src="js/OBJ_loader.js"></script>
+        <script src="js/MeshObject.js"></script>
         <script id="shader-vs" type="x-shader/x-vertex">
             attribute vec3 aVertexPosition;
             attribute vec3 aVertexNormal;
@@ -70,7 +71,7 @@
                     if(lambertTerm > 0.0) {
                        finalColor *= lambertTerm;
                     }
-                    if (finalColor.x == 0.0) {
+                    if (finalColor.x == 0.0 || finalColor.y == 0.0 || finalColor.z == 0.0) {
                         gl_FragColor = vec4(finalColor, 0.0);
                     }
                     else {
