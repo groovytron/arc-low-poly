@@ -74,8 +74,8 @@ function startRenderLoop(){
     renderLoop();
 }
 function drawScene(){
-    //glContext.clearColor(0.4, 0.4, 1.0, 1.0);
-    glContext.clearColor(1.0, 1.0, 1.0, 1.0);
+    glContext.clearColor(0.4, 0.4, 1.0, 1.0);
+    // glContext.clearColor(1.0, 1.0, 1.0, 1.0);
     // glContext.enable(glContext.DEPTH_TEST);
     glContext.blendFunc(glContext.ONE, glContext.ONE_MINUS_SRC_ALPHA);
     glContext.enable(glContext.BLEND);
