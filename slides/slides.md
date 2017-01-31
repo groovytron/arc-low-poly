@@ -14,21 +14,22 @@ dépôt git: [https://github.com/groovytron/arc-low-poly](https://github.com/gro
 
 ## Sommaire
 
-* Buts du projet
+* Objectifs du projet
 * Logiciels utilisés
 * Problèmes rencontrés
 * Solution finale
 * Atteinte des objectifs et améliorations possibles
 * Démonstration
+* Questions
 
 ---
 
-## Buts du projet
+## Objectifs du projet
 
 * Modéliser une table en billboards.
 * L'exporter au format _.obj_.
 * Afficher le modèle dans une page web.
-* Proposer un minimum d'interaction avec la table (rotation, transaltion, ...).
+* Proposer un minimum d'interaction avec la table (rotation, translation, ...).
 * Affichage de plusieurs tables dans une salle de classe (__secondaire__).
 * Modéliser un deuxième meuble (__secondaire__).
 
@@ -96,7 +97,7 @@ dépôt git: [https://github.com/groovytron/arc-low-poly](https://github.com/gro
 
 ## Démonstration
 
-[Application hébergée chez github](https://groovytron.github.io/arc-low-poly/)
+[Application hébergée chez GitHub](https://groovytron.github.io/arc-low-poly/)
 
 ---
 
