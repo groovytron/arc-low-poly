@@ -96,6 +96,8 @@ dépôt git: [https://github.com/groovytron/arc-low-poly](https://github.com/gro
 
 ## Démonstration
 
+[Application hébergée chez github](https://groovytron.github.io/arc-low-poly/)
+
 ---
 
 ## Questions?
