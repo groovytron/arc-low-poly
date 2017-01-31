@@ -44,6 +44,7 @@ function initShaderParameters(prg){
 }
 
 function initScene(){
+    // Tried to render two tables but only one is renderd. Needs debuging.
     meshObjects.push(new MeshObject("models/OBJ/Table/Table-Final-uvmapped.obj", "models/OBJ/Table/uvmap.png", 0.0, 0.0, 0.0));
     meshObjects.push(new MeshObject("models/OBJ/Table/Table-Final-uvmapped.obj", "models/OBJ/Table/uvmap.png", 1.0, 1.0, 1.0));
     initLights();
@@ -78,5 +79,5 @@ function initWebGL(){
     glContext = getGLContext('webgl-canvas');
     initProgram();
     initScene();
-    startRenderLoop(); // Might be reaplced by renderLoop()
+    startRenderLoop();
 }

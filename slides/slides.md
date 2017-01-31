@@ -3,7 +3,7 @@ title: HE-Arc Low Poly
 author:
     - Julien M'Poy
     - Joël Vaucher
-date: 31 Janvier 2017
+date: 31 Janvier 2017, Haute École Arc Ingénierie
 ---
 
 ## He-Arc Low Poly
@@ -15,7 +15,9 @@ dépôt git: [https://github.com/groovytron/arc-low-poly](https://github.com/gro
 ## Sommaire
 
 * Objectifs du projet
+* Billboards et leurs avantages
 * Logiciels utilisés
+* Blender et ses avantages
 * Problèmes rencontrés
 * Solution finale
 * Atteinte des objectifs et améliorations possibles
@@ -35,6 +37,20 @@ dépôt git: [https://github.com/groovytron/arc-low-poly](https://github.com/gro
 
 ---
 
+## Billboard
+
+![Billboard bunny](images/billboard-bunny.jpg)
+
+---
+
+## Avantages des billboards
+
+* Simplification du modèle (__moins de polygones__).
+* Économique en calculs (__gain de performances__).
+* Utilisé pour des modèles complexes (plantes).
+
+---
+
 ## Logiciels utilisés
 
 * Modélisation: [Blender](https://www.blender.org/)
@@ -43,6 +59,28 @@ dépôt git: [https://github.com/groovytron/arc-low-poly](https://github.com/gro
   [webgl-obj-loader](https://github.com/frenchtoast747/webgl-obj-loader)
   d'Aaron Boman.
 
+---
+
+## Blender
+
+![Modèle créé avec Blender](images/blender_features_model.jpg){width=700px}
+
+---
+
+## Avantages des logiciels de modélisation tridimensionnelle
+
+* Création de modèles complexes simplifiée.
+* Rendu en temps réel.
+* Exportation des modèles simple et en différents formats (_.obj_, _.json_, ...).
+
+
+<!--
+## WebGL
+
+* Outil d'infographie pour le web.
+* Possibilité de rendus en temps réel en profitant de la puissance de la carte
+  graphique.
+-->
 ---
 
 ## Problèmes rencontrés
@@ -65,7 +103,7 @@ dépôt git: [https://github.com/groovytron/arc-low-poly](https://github.com/gro
 
 ## Solution finale
 
-* Billboard modélisé avec Blender (prises sous différents plans)
+* Billboard modélisé avec Blender (prises sous différents plans et uv mapping)
 * Chargement du fichier _.obj_ avec _webgl-obj-loader_.
 * Chargement d'une texture unique (facilite la gestion dans les shaders)
 
@@ -82,13 +120,14 @@ dépôt git: [https://github.com/groovytron/arc-low-poly](https://github.com/gro
 ## Atteinte des objectifs
 
 * Table modélisée en billboards.
-* Modèle chargé dans WebGL (illumination locale avec l'[algorithme de Lambert](https://fr.wikipedia.org/wiki/Ombrage_plat))
+* Modèle chargé dans WebGL (avec [ombrage de Lambert](https://fr.wikipedia.org/wiki/Ombrage_plat))
 * Possibilité d'interaction (rotation et translation)
 
 ---
 
 ## Améliorations possibles
 
+* Régler les problèmes de transparence.
 * Afficher plus de tables.
 * Rendu d'une salle.
 * Modéliser des chaises.
@@ -102,3 +141,9 @@ dépôt git: [https://github.com/groovytron/arc-low-poly](https://github.com/gro
 ---
 
 ## Questions?
+
+---
+
+## Sources
+
+* Extreme Graphical Simplification: [http://web.cs.wpi.edu/~emmanuel/MQPs/extreme_simplification/data.htm](http://web.cs.wpi.edu/~emmanuel/MQPs/extreme_simplification/data.htm)

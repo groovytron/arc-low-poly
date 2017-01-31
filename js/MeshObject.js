@@ -19,7 +19,6 @@ class MeshObject {
         this.textureBuffer = getVertexBufferWithVertices(objData.textures);
         this.indexBuffer = getIndexBufferWithIndices(objData.indices);
         this.indices = objData.indices;
-        console.log("Indices", this.indices);
     }
 
     showPayloadInfo(filename, payload ) {
